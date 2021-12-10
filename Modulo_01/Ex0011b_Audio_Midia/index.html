@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Reproduzindo Audio no site</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5. </p>
+    <audio src="dolce_beat.mp3" controls autoplay></audio>
+    <!--Formatos compatíveis: .MP3 .WAC .OGG-->
+
+    <!--Outra maneira de adicionar o audio-->
+    <audio preload="metadata"> <!--metadata carrega apenas algumas informações, para completar o usuário q dá o play-->
+        <source src="dolce_beat.mp3" type="audio/mpeg">
+        <source src="dolce_beat.ogg" type="audio/ogg">
+        <source src="dolce_beat.wav" type="audio/wav">
+    </audio>
+
+</body>
+</html>

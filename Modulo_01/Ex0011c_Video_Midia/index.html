@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Reproduzindo videos(hospedados localmente) no site</h1>
+    <p>Vamos aprender a reproduzir vídeos em HTML5. </p>
+    <video src="pexels_videos_01.mp4" width="500px" controls></video><!--forma1-->
+
+    <!--Forma mais eficiente, adicionar vários formatos de videos mp4, m4v, etc-->
+    <video width="500px" poster="capa_video.png" controls> 
+        <source src="pexels_videos_01.mp4" type="video/mp4">
+        <source src="pexels_videos_01.m4v" type="video/m4v">
+        <source src="pexels_videos_01.webm" type="video/webm">
+        <source src="pexels_videos_01.ogg" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+    <!--O consumo de banda(tráfego de dados) pode ficar alto e caro
+        quando temos muitos acessos dos vídeos hospedados direto no seu site-->
+
+    <!--Hospedando o vídeo no youtube e embedando no site você aumenta a sua visibilidade nas pesquisas do Google-->
+    <h1>Reproduzindo videos(hospedados externamente Youtube) no site</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ra0emIMo9Fk" 
+    title="YouTube video player" frameborder="0" allow="accelerometer;
+    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</body>
+</html>

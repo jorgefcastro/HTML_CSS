@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fontes Baixadas</title>
+    <style>
+        /*
+        Com o seletor @font-face eu consigo especificar o local da fonte q baixei, nomea-la e usa-la no meu CSS
+        */
+        @font-face {
+            font-family: Plakat;
+            src: url(fonts/PlakatFraktur.otf) format('opentype');
+            
+            /*
+            Tipos de formatos:
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-att (Appla Advanced Typography)
+            - svg
+            */
+            font-weight: normal;
+            font-style: normal;
+        }
+        h1 {
+            font-family: 'Plakat';
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Fontes baixadas</h1>
+    <p>Com o seletor <strong>@font-face</strong> eu consigo especificar o local da fonte q baixei, nomea-la e usa-la no meu CSS</p>
+
+    <p>Use a extensão de navegador <a href="https://www.fonts.ninja" target="self"><strong> Fonts Ninja</strong></a> para descobrir a fonte de um site</p>
+
+    <h2>Alguns sites para detectar fontes em imagens</h2>
+    <ul>
+        <li> <a href="http://www.whatfontis.com" target="self"> whatfontis.com </a></li>
+        <li> <a href="http://www.fontsquirrel.com" target="_blank"> fontsquirrel.com </a></li>
+        <li> <a href="http://www.myfonts.com" target="_blank"> myfonts.com </a></li>
+    </ul>
+
+
+</body>
+</html>

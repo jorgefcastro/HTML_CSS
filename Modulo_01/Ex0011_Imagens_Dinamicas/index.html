@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <!--Se você não tem um site resposivo o usuário vai embora e seu site
+    começa a aumentar a taxa de rejeição para o Google-->
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes
+        ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <!--Com a tag picture>source eu determino a largura máxima até que as imagens se adequem-->
+    <!--A ordem dos sources precisam ser do menor para o maior (de cima para baixo)-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img_P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/img_M.png" type="image/png">
+        <img src="imagens/img_G.png" alt="Imagem flexível">
+    </picture>
+</body>
+</html>
