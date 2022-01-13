@@ -47,6 +47,9 @@ section {
     font-family: var(--fonte3);
     font-size: 3.5vw;/* 3.5% da viewport*/
 }
+section > p {
+    padding-bottom: 2em;
+}
 section.normal {
     background-color: white;
     color: black;
@@ -54,11 +57,23 @@ section.normal {
 section.imagem {
     background-color: rgb(66, 66, 66);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.336); /* iset diz que a sombra é interna */
+    background-size: cover; /* forma da imagem ocupar o espaço */
+    background-attachment: fixed; /* assim faço o efeito parallax */
+}
+section#img01 {
+    background-image: url('imagens/background001.jpg'); /* adicionando imagem no fundo */
+    background-position: right center; /* orientação do alinhamento da imagem */
+}
+section#img02 {
+    background-image: url('imagens/background002.jpg');
+    background-position: right center;
 }
 section.imagem > p {
     display: inline-block; /* nessa config, ele se adapta ao tamanho do conteúdo */
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.171);
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px black;
 }
 footer { 
     background-color: black;
