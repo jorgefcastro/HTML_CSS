@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /* config para efeito de cabeçalho fixo */
         }
         td, th {
             border: 1px solid black;
@@ -21,12 +22,27 @@
             background-color: gray;
             color: white;
         }
+        thead > th > tr {
+            position: sticky; /* config para efeito de cabeçalho fixo */
+            top: -1px; /* config para efeito de cabeçalho fixo */
+            background-color: gray;
+        }
+        tbody > tr:nth-child(2n) { /* digo que de 2 em 2 linhas vai alterar a cor (efeito zebrado), posso usar também dentro dos () a opção "odd", para dizer que todo impar será */
+            background-color: lightgray;
+        }
+        caption {
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!-- ANATOMIA PARA TABELAS GRANDES
         TABLE
+            Caption
             THEAD
                 TR, TD, TH
             TBODY
@@ -35,10 +51,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption> População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 70px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -57,7 +74,7 @@
 
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td>0000</td>
         </tfoot>
     </table>
