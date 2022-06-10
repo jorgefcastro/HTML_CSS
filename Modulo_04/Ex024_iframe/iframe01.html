@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe#cursoemv {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um iframe</h1>
+    <!-- Tamanho padrão do iframe 300X150px-->
+    <p>
+        Acessando o site do <iframe id="cursoemv" src="http://cursoemvideo.com" frameborder="0" scrolling="no"></iframe>
+        para aprender a programar
+    </p>
+    <p> O site do <iframe src="http://google.com" frameborder="0"><a href="www.google.com" target="_blank">Google</a></iframe>não aceita ser chamado em um iframe</p>
+    <br>
+    <p>
+        Caso não seja compatível com o navegador eu posso usar dentro da tag "iframe", um link para o site desejado.
+    </p>
+    <p>
+        O parâmetro "scrolling" habilita ou desabilita a rolagem, podendo ser "yes" ou "no". <br>
+    </p>
+    
+</body>
+</html>
